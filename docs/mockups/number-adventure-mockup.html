@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Number Adventure Mockup</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "SF Pro Rounded", "SF Pro Text", system-ui, -apple-system, sans-serif;
+      }
+      body {
+        margin: 0;
+        background: linear-gradient(135deg, #fbd3f4, #c5e5ff);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px;
+      }
+      .phone {
+        width: 390px;
+        background: rgba(255, 255, 255, 0.92);
+        border-radius: 28px;
+        box-shadow: 0 30px 80px rgba(48, 63, 100, 0.25);
+        overflow: hidden;
+      }
+      .header {
+        padding: 28px 24px 12px;
+        text-align: center;
+      }
+      .title {
+        font-size: 28px;
+        font-weight: 700;
+        margin: 0;
+      }
+      .subtitle {
+        margin: 6px 0 0;
+        color: #5f6b7a;
+        font-size: 16px;
+      }
+      .card {
+        margin: 18px 20px;
+        background: white;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 12px 30px rgba(50, 70, 100, 0.12);
+      }
+      .stage-pill {
+        display: inline-block;
+        background: #f0e8ff;
+        color: #6b48c5;
+        border-radius: 999px;
+        padding: 6px 14px;
+        font-weight: 600;
+        font-size: 13px;
+      }
+      .stage-title {
+        margin: 12px 0 6px;
+        font-weight: 700;
+        font-size: 18px;
+      }
+      .big-number {
+        font-size: 96px;
+        text-align: center;
+        font-weight: 800;
+        color: #2b2d42;
+        margin: 10px 0 16px;
+      }
+      .button-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      .button {
+        border: none;
+        border-radius: 14px;
+        padding: 12px;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: default;
+      }
+      .button.primary {
+        background: #ffb347;
+        color: white;
+      }
+      .button.secondary {
+        background: #f3f5f9;
+        color: #3a4252;
+      }
+      .options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-top: 12px;
+      }
+      .option {
+        background: #ffe7c7;
+        border-radius: 16px;
+        padding: 18px 0;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .progress {
+        margin: 18px 20px 24px;
+        background: rgba(60, 130, 255, 0.12);
+        border-radius: 18px;
+        padding: 16px;
+        font-size: 14px;
+      }
+      .progress strong {
+        display: block;
+        margin-top: 6px;
+      }
+      .reward {
+        margin: 0 20px 24px;
+        background: rgba(255, 205, 86, 0.35);
+        border: 2px dashed #ffab00;
+        padding: 14px;
+        border-radius: 18px;
+        text-align: center;
+        font-weight: 700;
+      }
+      .footer {
+        background: rgba(0, 0, 0, 0.05);
+        padding: 12px;
+        text-align: center;
+        font-size: 12px;
+        color: #5f6b7a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="phone" role="img" aria-label="Mockup of the Number Adventure app">
+      <div class="header">
+        <h1 class="title">Number Adventure</h1>
+        <p class="subtitle">Sound &amp; Symbol • Listen and match the sound</p>
+      </div>
+
+      <div class="card">
+        <span class="stage-pill">Stage 1</span>
+        <div class="stage-title">Hear the number, see the symbol</div>
+        <div class="big-number">7</div>
+        <div class="button-row">
+          <button class="button secondary">Hear it</button>
+          <button class="button primary">I know it!</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="stage-pill">Stage 2</span>
+        <div class="stage-title">Can you find the number 4?</div>
+        <div class="options">
+          <div class="option">4</div>
+          <div class="option">6</div>
+          <div class="option">1</div>
+          <div class="option">9</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="stage-pill">Stage 4</span>
+        <div class="stage-title">Solve the math</div>
+        <div class="big-number" style="font-size: 48px;">3 + 2 = ?</div>
+        <div class="options">
+          <div class="option">4</div>
+          <div class="option">5</div>
+          <div class="option">3</div>
+          <div class="option">6</div>
+        </div>
+      </div>
+
+      <div class="reward">⭐️ Star earned! Keep going!</div>
+
+      <div class="progress">
+        <div><strong>Great with:</strong> 1, 2, 5</div>
+        <div><strong>Still learning:</strong> 3, 4, 6, 7, 8</div>
+      </div>
+
+      <div class="footer">Progress, rewards, and speech prompts encourage the child.</div>
+    </div>
+  </body>
+</html>
